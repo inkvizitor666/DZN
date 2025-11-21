@@ -1,0 +1,21 @@
+{
+  "name": "dzn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set UV_THREADPOOL_SIZE=2 & node workerThreads.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkvizitor666/DZN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkvizitor666/DZN/issues"
+  },
+  "homepage": "https://github.com/inkvizitor666/DZN#readme"
+}

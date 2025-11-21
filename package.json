@@ -1,0 +1,25 @@
+{
+  "name": "dzn",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set UV_THREADPOOL_SIZE=2 & node app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkvizitor666/DZN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkvizitor666/DZN/issues"
+  },
+  "homepage": "https://github.com/inkvizitor666/DZN#readme",
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
