@@ -7,3 +7,7 @@ const childProcess = exec("dir", (err, stdout, stderr) => {
   console.log("stdout: " + stdout);
   console.log("stdout: " + stderr);
 });
+
+childProcess.on("exit", (code) => {
+  console.log("Код выход: " + code);
+});
