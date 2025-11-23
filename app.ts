@@ -1,27 +1,9 @@
-import { factorial } from "./factorial.ts";
+import { exec } from "child_process";
 
-const compute = (array: number[]): number[] => {
-  const arr: number[] = [];
-  for (let i = 0; i < 10000000; i++) {
-    arr.push(i * i);
+const childProcess = exec("dir", (err, stdout, stderr) => {
+  if (err) {
+    console.log(err.message);
   }
-  return array.map((el) => {
-    return factorial(el);
-  });
-};
-
-const main = () => {
-  performance.mark("start");
-  const result: number[][] = [
-    compute([30, 40, 50, 10, 20, 30]),
-    compute([30, 40, 50, 10, 20, 30]),
-    compute([30, 40, 50, 10, 20, 30]),
-    compute([30, 40, 50, 10, 20, 30]),
-  ];
-  console.log(result);
-  performance.mark("end");
-  performance.measure("main", "start", "end");
-  console.log(performance.getEntriesByName("main").pop());
-};
-
-main();
+  console.log("stdout: " + stdout);
+  console.log("stdout: " + stderr);
+});

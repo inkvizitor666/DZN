@@ -6,7 +6,7 @@
   "main": "app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set UV_THREADPOOL_SIZE=2 & node app.ts"
+    "start": "set UV_THREADPOOL_SIZE=8 & node --watch app.ts"
   },
   "repository": {
     "type": "git",
